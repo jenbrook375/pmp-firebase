@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brookshire/PMP Challenge</title>
+    <meta name="description" content="Website Design and implementation focusing on the needs of the legal community">
+    <meta name="keywords"
+        content="ux/ui, design, graphic design, consultants, web design, website consulting, legal, law">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Lexend+Deca|Livvic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!--fixed nav bar containing logo and menu-->
+    <nav class="navbar">
+        <a class="navbar-logo" href="#">
+            <img src="../imgs/db_logo.png" width="250" height="200" alt="designbar logo">
+        </a>
+    </nav>
+
+
+    <main>
+        <!--img, text and button that calls form-->
+        <div class="elem1">
+            <img class="law" src="../imgs/law.jpg" alt="">
+            <h2>We Specialize in Designing Websites for Law Firms</h2>
+            <blockquote>We make great looking websites, but that's just the beginning. We also optimize for speed,
+                simplify for reliability and research to increase traffic, all while listening to your desires and
+                answering all of your questions.</blockquote>
+            <button class="form" id="expert" type="submit">Speak with an Expert</button>
+        </div>
+
+        <!--large custom graphic-imagine something great-->
+        <img class='elem2' src="../imgs/productivity.jpg" alt="">
+
+        <!--stats re:consumer web research/bad websites/search opt-->
+        <div class="elem3">
+            <h3>Trust, Confidence, Credibility</h3>
+            <ul>
+                <li>90% of consumers conduct online research before making purchasing decisions</li>
+                <li>75% of the consumers who do web-based research judge businesses based on the company's website</li>
+                <li>Nearly half of all users will abandon a website that takes more than 3 seconds to load</li>
+                <li>Google and other search engines prioritize site rankings based on speed of load</li>
+            </ul>
+            <img class="error" src="../imgs/404.jpg" alt="404 error image">
+        </div>
+
+        <div class="elem4">
+            <h4 class='topic'>Your Online Presence</h4>
+            <h3 class="title">What is UX/UI, and Why Does it Matter?</h3>
+            <p id="ux">“UX” stands for “user experience.” A user’s experience of the app is determined by how they interact with it. Is the experience smooth and intuitive or clunky and confusing? Does navigating the app feel logical or does it feel arbitrary? Does interacting with the app give people the sense that they’re efficiently accomplishing the tasks they set out to achieve or does it feel like a struggle? User experience is determined by how easy or difficult it is to interact with the user interface elements that the UI designers have created...</p>
+            <div id="panel">
+                <p>The “UI” in UI design stands for “user interface.” The user interface is the graphical layout of an application. It consists of the buttons users click on, the text they read, the images, sliders, text entry fields, and all the rest of the items the user interacts with. This includes screen layout, transitions, interface animations and every single micro-interaction. Any sort of visual element, interaction, or animation must all be designed.</p>
+                <p>To put it simply, UX/UI is important because it tries to fulfill the user’s needs. It aims to provide positive experiences that keep users loyal to the product or brand. Additionally, a meaningful user experience allows you to define customer journeys on your website that are most conducive to business success.</p>
+            </div>
+            <button id="learn" type="click">Learn More</button>
+        </div>
+
+        <div class="elem5">
+            <h4 class='topic'>Establish Trust, Build Credibility</h4>
+            <h3 class="title">Because You Wouldn't Wear a Leisure Suit in Public Either</h3>
+            <p></p>
+            <p>Can we build a website that makes being a lawyer look Instagram cool? Probably not. But we can build something that looks modern and functions well. And really, isn't that what being cool is all about?
+            </p>
+            <img src="" alt="">
+
+        </div>
+    </main>
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+     <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBElIzZCf8xVutODbNES8Ulbnsa3UN1iW4",
+            authDomain: "brookshirepmp.firebaseapp.com",
+            databaseURL: "https://brookshirepmp.firebaseio.com",
+            projectId: "brookshirepmp",
+            storageBucket: "",
+            messagingSenderId: "510835145695",
+            appId: "1:510835145695:web:6b23fdbd46929416"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
