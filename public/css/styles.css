@@ -6,10 +6,14 @@ body {
     width: 100vw;
 }
 
+
+/* RESPONSIVE STYLES */
 /* styling for navbar and logo */
 .navbar {
+    display: flex;
+    justify-content: space-between;
     width: 100vw;
-    height: 160px;
+    height: 175px;
     background: #494344;
 }
 
@@ -17,42 +21,42 @@ body {
    padding-left: 15px;
 }
 
-/* styling for main container */
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: minmax(100px, 1fr);
-    grid-gap: 1em;
+.navbar ul {
+    color: white;
+    font-size: 12px;
+    margin-right: 50px;
+    padding-top: 15px;
+    list-style-type: none;
 }
 
-/* main>div:nth-child(even) {
-    background: #ddd;
-
-} */
+/* styling for main container */
+main {
+    display: block;
+}
 
 /* styling for img, quote, button */
 .elem1 {
-    display: grid;
-    grid-column: 2/2;
-    grid-row: 1/1;
-    margin-top: 50px;
+        display: block;
+        text-align: center;
+        margin: auto;
 }
 
 .law {
     justify-self: center;
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
 }
 
 h2 {
     color: #494344;
-    justify-self: center;
+    text-align: center;
     font-family: 'Lexend Deca',sans-serif;
     margin-block-start: 1px;
     margin-block-end: 1px;
 }
 
 blockquote {
+    text-align: center;
     margin-block-start: 0%;
     margin-block-end: 0%;
     font-family: 'Dosis', sans-serif;
@@ -71,28 +75,22 @@ button {
 
 /* stying for large graphic */
 .elem2 {
-    display: grid;
-    grid-column:2/4;
-    grid-row: 2/4;
     width: 70%;
-    height: 650px;
-    justify-self: end;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 55px;
 }
 
 /* styling for statistics/404 img */
 .elem3 {
-    display: grid;
-    justify-self: end;
-    grid-column: 1/2;
-    grid-row: 2/4;
-    height: 150px;
-    margin: 50px 0px 0px 20px;
+    margin: 50px 20px 0px 20px;
 }
 
 h3 {
     font-family: 'Lexend Deca', sans-serif;
     margin-block-start: 1px;
     margin-block-end: 1px;
+    text-align: center;
 }
 
 li {
@@ -105,20 +103,7 @@ li {
 }
 
 .elem4 {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    justify-self: stretch;
-    margin-left: 150px;
-    margin-right: 35px;
-}
-
-.elem5 {
-    display: grid;
-    grid-column-start: 1;
-    grid-row-start: 5;
-    margin-left: 20PX;
+    margin: 50px 20px 0px 20px;
 }
 
 .title {
@@ -129,13 +114,28 @@ p {
     font-family: 'Dosis', sans-serif;
     margin-block-start: 1px;
     margin-block-end: 10px;
+    padding-top: 10px;
 }
 
+#learn {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    float: right;
+}
 #panel {
-    /* height: 0px;
-    visibility: hidden; */
     display: none;
 }
+
+.elem5 {
+    margin-top: 75px;
+    margin-left: 20PX;
+}
+
+#information {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 .topic {
     color: #E38201;
     font-weight: 900;
@@ -144,21 +144,173 @@ p {
     margin-block-end: 10px;
 }
 
-@media(max-width:900px){
-    body * {
-        align-content: center;
+.footer {
+    display: block;
+    width: 100vw;
+    height: 50px;
+    background: #494344;
+    margin-top: 25px;
+}
+@media(min-width:900px){
+
+
+    /* styling for navbar and logo */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 175px;
+        background: #494344;
     }
-    .main {
+    
+    .navbar-logo {
+       padding-left: 15px;
+    }
+    
+    .navbar ul {
+        color: white;
+        margin-right: 50px;
+        padding-top: 15px;
+        font-size: medium;
+        list-style-type: none;
+    }
+    
+    /* styling for main container */
+    main {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: minmax(100px, 1fr);
         grid-gap: 1em;
+        font-size: large;
     }
-    .elem2 img {
+    
+    /* styling for img, quote, button */
+    .elem1 {
+        display: grid;
+        grid-column: 2/2;
+        grid-row: 1/1;
+        margin-top: 50px;
+    }
+    
+    .law {
+        justify-self: center;
+        height: 300px;
+        width: 300px;
+    }
+    
+    h2 {
+        color: #494344;
+        justify-self: center;
+        font-family: 'Lexend Deca',sans-serif;
+        margin-block-start: 1px;
+        margin-block-end: 1px;
+    }
+    
+    blockquote {
+        margin-block-start: 0%;
+        margin-block-end: 0%;
+        font-family: 'Dosis', sans-serif;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    button {
+        width: 175px;
+        height: 50px;
+        border-radius: 15px;
+        background-color: cadetblue;
+        color: #494344;
+        justify-self: center;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    
+    /* stying for large graphic */
+    .elem2 {
+        display: grid;
+        grid-column:2/4;
+        grid-row: 2/4;
+        width: 70%;
+        height: 650px;
+        justify-self: end;
+    }
+    
+    /* styling for statistics/404 img */
+    .elem3 {
+        display: grid;
+        justify-self: end;
+        grid-column: 1/2;
+        grid-row: 2/4;
+        height: 150px;
+        margin: 50px 0px 0px 20px;
+    }
+    
+    h3 {
+        font-family: 'Lexend Deca', sans-serif;
+        margin-block-start: 1px;
+        margin-block-end: 1px;
+    }
+    
+    li {
+        padding-top: 15px;
+        font-family: 'Dosis', sans-serif;
+    }
+    
+    .error {
+        width: 100%;
+    }
+    
+    .elem4 {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        justify-self: stretch;
+        margin-left: 150px;
+        margin-right: 35px;
+    }
+    
+    .elem5 {
+        display: grid;
+        grid-column-start: 1;
+        grid-row-start: 5;
+        margin-left: 20PX;
+    }
+    #information {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .title {
+        font-family: 'Livvic', sans-serif;
+    }
+    
+    p {
+        font-family: 'Dosis', sans-serif;
+        margin-block-start: 1px;
+        margin-block-end: 10px;
+        padding-top: 10px;
+    }
+    
+    #panel {
         display: none;
     }
+    
+    .topic {
+        color: #E38201;
+        font-weight: 900;
+        font-family: 'Lexend Deca', sans-serif;
+        margin-block-start: 1px;
+        margin-block-end: 10px;
+    }
+    
+    .footer {
+        display: block;
+        width: 100vw;
+        height: 50px;
+        background: #494344;
+        margin-top: 25px;
+    }
+    }
 
-}
 
 
 

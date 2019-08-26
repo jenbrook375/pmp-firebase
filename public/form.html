@@ -10,30 +10,31 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis|Lexend+Deca|Livvic&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/form_style.css">
+    <link rel="stylesheet" href="css/form_style.css">
     <title>Form</title>
 </head>
 
 <body>
     <div class="container">
         <!-- logo and company contact info -->
-        <img class="logo" src="../imgs/db_logo.png">
+        <img class="logo" src="imgs/db_logo.png">
         <div class="wrapper">
             <div class="company">
                 <h3>DesignBar</h3>
                 <ul>
-                    <li><i class="fa fa-road"></i> 2251 N Shaw Ave.</li>
-                    <li><i class="fa fa-phone"></i> (559)297-3242</li>
-                    <li><i class="fa fa-envelope"></i> @DB.page</li>
+                    <li><i class="fa fa-road"></i>  2251 N Shaw Ave.</li>
+                    <li><i class="fa fa-phone"></i>  (559)297-3242</li>
+                    <li><i class="fa fa-envelope"></i>  info@DB.page</li>
                 </ul>
             </div>
             <!-- contact form for capturing data -->
             <div class="contact">
                 <h3>Email Us</h3>
+                <div class="alert">Your Message Has Been Sent</div>
                 <form id="contactForm" action="">
                     <p>
                         <label for="">Name</label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="name" required>
                     </p>
                     <p>
                         <label for="">Company</label>
@@ -41,7 +42,7 @@
                     </p>
                     <p>
                         <label for="">Email Address</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </p>
                     <p>
                         <label for="">Phone Number</label>

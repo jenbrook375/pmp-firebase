@@ -1,6 +1,6 @@
 // Find 'speak to an expert' button
 document.getElementById('expert').addEventListener('click', openContactForm);
-console.log('works');
+document.getElementById('information').addEventListener('click', openContactForm);
 
 // opens new tab with contact form
 function openContactForm(){
@@ -9,11 +9,10 @@ function openContactForm(){
 
 // find 'learn more' button
 document.getElementById('learn').addEventListener('click', showMore);
-console.log('learnmore');
 
-// increases paragraph 'ui' height making ir readable
+
+// toggles panel element to show
 function showMore(){
-    // document.getElementById('panel').style.visibility= 'visible';
-    // document.getElementById('panel').style.height='150px';
     document.getElementById('panel').style.display="block";
+    document.getElementById('learn').style.display='none';
 }

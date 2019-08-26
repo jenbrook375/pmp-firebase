@@ -2,7 +2,7 @@
 
 // submit button event listener
 document.getElementById('contactForm').addEventListener('submit', submitForm);
-
+var form = document.getElementById('contactForm');
 
 
 // submit form
@@ -24,7 +24,20 @@ function submitForm(e) {
         email: email,
         phone: phone,
         message: message
+        
     });
+    
+
+    // show alert upon submit
+    document.querySelector('.alert').style.display = "block";
+
+    // hide alert after 3 seconds
+    setTimeout(function(){
+        document.querySelector('.alert').style.display = "none";
+    },3000);
+
+    form.reset();
+    return false;
 }
 
 
@@ -32,11 +45,3 @@ function submitForm(e) {
 function getInputValues(id) {
     return document.getElementById(id).value;
 }
-
-
-    // .then(function (docRef) {
-    //     console.log("Document written with ID: ", docRef.id);
-    // })
-    // .catch(function (error) {
-    //     console.error("Error adding document: ", error);
-    // }); test.firestore.js
